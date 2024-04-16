@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from 'src/components/header/header.component';
-import { LucideAngularModule, File, Home, Menu, UserCheck } from 'lucide-angular';
 
 @NgModule({
   declarations: [
@@ -12,7 +11,6 @@ import { LucideAngularModule, File, Home, Menu, UserCheck } from 'lucide-angular
   imports: [
     BrowserModule,
     HeaderComponent,
-    LucideAngularModule.pick({File, Home, Menu, UserCheck})
   ],
   providers: [],
   bootstrap: [AppComponent]

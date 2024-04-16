@@ -1,22 +1,26 @@
 <nav class="fixed top-0 left-0 w-full">
     <div class="flex justify-between items-center px-10 py-5 max-w-[1140px] m-auto">
         <span class="font-bold text-lg">My Portfolio</span>
-        <ul class="flex items-center gap-7 list-none text-base font-medium">
-            <li>
-                <a>Home</a>
-            </li>
-            <li>
-                <a>About</a>
-            </li>
-            <li>
-                <a>Skills</a>
-            </li>
-            <li>
-                <a>Projects</a>
-            </li>
-            <li>
-                <a>Contact</a>
-            </li>
-        </ul>
+        @if(isMobile) {
+            <lucide-angular [name]="Menu" class="my-icon"></lucide-angular>
+        } @else {
+            <ul class="flex items-center gap-7 list-none text-base font-medium">
+                <li>
+                    <a>Home</a>
+                </li>
+                <li>
+                    <a>About</a>
+                </li>
+                <li>
+                    <a>Skills</a>
+                </li>
+                <li>
+                    <a>Projects</a>
+                </li>
+                <li>
+                    <a>Contact</a>
+                </li>
+            </ul>
+        }
     </div>
 </nav>
