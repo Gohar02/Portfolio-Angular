@@ -10,7 +10,7 @@ export class ThemeModeService {
 
     setCurrentMode() {
         const initialMode =
-            (typeof window !== "undefined"
+            (typeof window !== "undefined" &&  window.localStorage.getItem("theme")
             ? window.localStorage.getItem("theme")
             : "light") as ThemeMode;
 
