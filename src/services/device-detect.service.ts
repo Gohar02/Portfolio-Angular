@@ -8,7 +8,7 @@ export class DeviceDetectService {
     private deviceService = inject(DeviceDetectorService);
 
     get isMobile() {
-        return this.deviceService.isMobile();
+        return (window.innerWidth < 768 || this.deviceService.isMobile());
     }
 
     get isTablet() {
